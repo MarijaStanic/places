@@ -1,0 +1,3 @@
+include ':places-app', ':places-core'
+project(':places-app').projectDir = new File('app')
+project(':places-core').projectDir = new File('core')

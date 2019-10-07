@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Places</string>
+
+    <!-- MainActivity -->
+    <string name="message_keyword_added">Keyword added</string>
+    <!--    Navigation drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="my_map">My Map</string>
+    <string name="title_keywords">Keywords</string>
+    <string name="hint_search_view">Search</string>
+
+    <!-- PlaceDetails -->
+    <string name="button_add_to_your_map">ADD TO YOUR MAP</string>
+    <string name="button_edit">EDIT</string>
+    <string name="button_remove_from_your_map">REMOVE FROM YOUR MAP</string>
+    <string name="button_directions">Directions</string>
+    <string name="button_website">Website</string>
+
+    <!-- Settings -->
+    <string name="snack_bar_get_location">You can always change the location permission</string>
+    <string name="snack_bar_settings">Settings</string>
+
+    <!--  Menu items -->
+    <string name="confirm">Confirm</string>
+    <string name="delete">Delete</string>
+    <string name="rename">Rename</string>
+
+    <string name="menu_settings">Settings</string>
+
+    <!-- Warnings -->
+    <string name="warning_exit_application">Press back again to exit</string>
+
+    <!-- Preferences -->
+    <string name="pref_map_type">Map Type</string>
+    <string name="pref_map_type_default">MAP_TYPE_NORMAL</string>
+
+    <!-- MyMapFragment -->
+    <string name="message_error_no_places">No places in folder</string>
+    <!--    Api messages -->
+    <string name="message_no_places">Nothing found in 5km radius</string>
+
+    <!-- PlaceDetailsFragment -->
+    <!--    Api messages -->
+    <string name="message_no_place_details">Details for this place are not found</string>
+
+    <!-- StreetViewPanoramaFragment -->
+    <string name="message_error_no_street_view">Street view is not available for this location</string>
+
+    <!-- Exception messages -->
+    <string name="exception_message_general">An error in the application has occurred</string>
+    <string name="exception_message_no_connection">No internet connection</string>
+
+    <!-- FoldersActivity -->
+    <string name="toolbar_title_folders">Your Folders</string>
+    <!--    FoldersFragment -->
+    <string name="dialog_title_rename_folder">Rename folder</string>
+
+    <!--AddSelectFolderFragmentment -->
+    <string name="dialog_title_new_folder">New folder</string>
+
+</resources>

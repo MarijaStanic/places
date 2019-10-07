@@ -1,0 +1,98 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        tools:context="com.marija.diplomski.places.placedetails.PlaceDetailsFragment">
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <Button
+            android:id="@+id/btn_add_to_map"
+            style="@style/PlaceDetailsButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/button_add_to_your_map"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget.Button"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_edit_remove_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:dividerVertical"
+            android:dividerPadding="4dp"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_edit_place"
+                style="@style/PlaceDetailsButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="@string/button_edit"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget.Button"
+                android:textColor="#1c7fae" />
+
+            <Button
+                android:id="@+id/btn_remove_from_map"
+                style="@style/PlaceDetailsButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="@string/button_remove_from_your_map"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget.Button"
+                android:textColor="#aca594" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_directions"
+            style="@style/PlaceDetailsButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_direction"
+            android:text="@string/button_directions"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget.Button" />
+
+        <Button
+            android:id="@+id/btn_website"
+            style="@style/PlaceDetailsButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_earth"
+            android:text="@string/button_website"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget.Button"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_phone_number"
+            style="@style/PlaceDetailsButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_phone"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget.Button"
+            android:visibility="gone" />
+
+        <include layout="@layout/table" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

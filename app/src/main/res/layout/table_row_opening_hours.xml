@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:divider="?android:attr/dividerHorizontal"
+    android:padding="10dp"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/tv_weekday"
+        android:paddingRight="15dp"
+        android:textAppearance="@android:style/TextAppearance.Holo.Widget.ActionBar.Menu" />
+
+    <TextView
+        android:id="@+id/tv_working_hours"
+        android:paddingLeft="15dp"
+        android:textAppearance="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle" />
+
+</TableRow>

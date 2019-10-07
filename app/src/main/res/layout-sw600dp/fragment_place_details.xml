@@ -1,0 +1,119 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="34dp"
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        tools:context="com.marija.diplomski.places.placedetails.PlaceDetailsFragment">
+
+        <ImageView
+            android:id="@+id/iv_place"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_place"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="60dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <Button
+            android:id="@+id/btn_add_to_map"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txt_address"
+            android:gravity="center"
+            android:text="@string/button_add_to_your_map"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone"
+            android:paddingLeft="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_edit_remove_place"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_add_to_map"
+            android:divider="?android:dividerHorizontal"
+            android:dividerPadding="4dp"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:visibility="gone"
+            android:paddingLeft="10dp">
+
+            <Button
+                android:id="@+id/btn_edit_place"
+                style="@android:style/Widget.Material.Light.Button.Borderless"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/button_edit"
+                android:textColor="#1c7fae" />
+
+            <Button
+                android:id="@+id/btn_remove_from_map"
+                style="@android:style/Widget.Material.Light.Button.Borderless"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/button_remove_from_your_map"
+                android:textColor="#aca594" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_directions"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_edit_remove_place"
+            android:drawableLeft="@drawable/ic_direction"
+            android:paddingLeft="10dp"
+            android:text="@string/button_directions" />
+
+        <Button
+            android:id="@+id/btn_website"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_directions"
+            android:drawableLeft="@drawable/ic_earth"
+            android:text="@string/button_website"
+            android:visibility="gone"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn_phone_number"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_website"
+            android:drawableLeft="@drawable/ic_phone"
+            android:visibility="gone"
+            android:paddingLeft="10dp"/>
+
+        <include
+            layout="@layout/table"
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+                   android:layout_height="450dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_address" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

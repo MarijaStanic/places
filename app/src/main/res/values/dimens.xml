@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- PlaceDetails -->
+    <dimen name="place_details_btn_padding">10dp</dimen>
+    <dimen name="place_details_btn_margin">3dp</dimen>
+
+    <!-- MainActivity -->
+    <dimen name="nav_layout_width">@dimen/match_parent</dimen>
+    //nav_header_main
+    <dimen name="nav_header_main_height">150dp</dimen>
+
+    <!-- Enum dimensions -->
+    <dimen name="match_parent">-1px</dimen>
+    <dimen name="wrap_content">-2px</dimen>
+    <dimen name="rv_my_map">110dp</dimen>
+    <dimen name="iv_width_my_map_card">40dp</dimen>
+    <dimen name="cv_width_my_map">150dp</dimen>
+
+</resources>

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addselectfolders.AddSelectFolderFragment">
+
+    <Button
+        android:id="@+id/btn_create_folder"
+        style="@style/PlaceDetailsButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="CREATE NEW FOLDER"
+        android:textColor="#1c7fae" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_folders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

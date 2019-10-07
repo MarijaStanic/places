@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MainActivity -->
+    <dimen name="nav_layout_width">400dp</dimen>
+
+    <!-- PlaceDetails -->
+    <dimen name="place_details_btn_padding">15dp</dimen>
+    <dimen name="place_details_btn_margin">6dp</dimen>
+</resources>
